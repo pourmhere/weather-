@@ -53,7 +53,7 @@ function initMap(lat, lon) {
 
 // Fetch weather data from OpenWeatherMap API
 function fetchWeatherData(lat, lon) {
-  const apiKey = "29ea59008d3de05217a39030c2557701";
+  const apiKey = "";
   //   const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&units=metric&appid=${apiKey}`;
   const apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${lat}&lon=${lon}&exclude={part}&appid=${apiKey}`;
 
