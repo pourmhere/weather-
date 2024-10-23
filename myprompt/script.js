@@ -11,7 +11,7 @@ function getWeatherData() {
     document.getElementById("longitude").textContent = long;
 
     // Call a weather API (OpenWeatherMap API example)
-    const apiKey = "29ea59008d3de05217a39030c2557701"; // Use your API key here
+    const apiKey = ""; // Use your API key here
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
 
     const response = await fetch(apiUrl);
