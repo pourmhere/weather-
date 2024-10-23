@@ -26,7 +26,7 @@ class Weather {
 }
 
 // Instantiate the class and call the API
-const apiKey = "29ea59008d3de05217a39030c2557701"; // Your API key here
+const apiKey = ""; // Your API key here
 const weatherApp = new Weather(apiKey);
 
 // Example: Fetch weather for a specific location (latitude and longitude)
