@@ -17,7 +17,7 @@ function showPosition(position) {
 
   const lat = position.coords.latitude;
   const long = position.coords.longitude;
-  const apiKey = "29ea59008d3de05217a39030c2557701"; // Use your API key here
+  const apiKey = ""; // Use your API key here
   const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
 
   async function getData() {
