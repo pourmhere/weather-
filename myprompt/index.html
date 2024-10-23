@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Api</h1>
+            <button id="fetchDataBtn">Fetch Data</button>
+        </div>
+
+        <div id="locationInfo" class="location-info">
+            <h2>Welcome To The Weather App</h2>
+            <p>Here is your current location</p>
+            <p>Lat: <span id="latitude"></span> | Long: <span id="longitude"></span></p>
+            <div id="map" style="width:400px; height:300px;"></div>
+        </div>
+
+        <div id="weatherData" class="weather-data">
+            <h3>Your Weather Data</h3>
+            <p>Location: <span id="location"></span></p>
+            <p>Wind Speed: <span id="windSpeed"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>Time Zone: <span id="timeZone"></span></p>
+            <p>Pressure: <span id="pressure"></span></p>
+            <p>Wind Direction: <span id="windDirection"></span></p>
+            <p>UV Index: <span id="uvIndex"></span></p>
+            <p>Feels Like: <span id="feelsLike"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

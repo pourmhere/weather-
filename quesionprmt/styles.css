@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #282046;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+#fetchDataBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.map {
+  width: 100%;
+  height: 300px;
+  margin-top: 20px;
+}
+
+.weather-data {
+  margin-top: 20px;
+  background-color: #412f6b;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.weather-data p {
+  margin: 10px 0;
+}

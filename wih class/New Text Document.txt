@@ -1,0 +1,35 @@
+class Weather {
+  constructor(apiKey) {
+    this.apiKey = apiKey;
+    this.apiUrl = "https://api.openweathermap.org/data/2.5/weather";
+  }
+
+  // Method to fetch weather data
+  async getWeather(lat, lon) {
+    const url = `${this.apiUrl}?lat=${lat}&lon=${lon}&appid=${this.apiKey}&units=metric`;
+
+    try {
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error("Failed to fetch weather data");
+      }
+      const jsonData = await response.json();
+      
+      // Create a WeatherData object and display the weather info
+      const weatherData = new WeatherData(jsonData);
+      weatherData.display();
+      
+    } catch (error) {
+      console.error("Error:", error);
+    }
+  }
+}
+
+// Instantiate the class and call the API
+const apiKey = "29ea59008d3de05217a39030c2557701"; // Your API key here
+const weatherApp = new Weather(apiKey);
+
+// Example: Fetch weather for a specific location (latitude and longitude)
+const lat = 37.7749; // Latitude for San Francisco
+const lon = -122.4194; // Longitude for San Francisco
+weatherApp.getWeather(lat, lon);
